@@ -19,10 +19,13 @@ namespace mantis_tests
             baseURL = "http://HomeServer:8080";
             Registration = new RegistrationHelper(this);
             Ftp = new FtpHelper(this);
+            James = new JamesHelper(this);
+            Mail = new MailHelper(this);
         }
 
         public FtpHelper Ftp { get; set; }
-
+        public JamesHelper James { get; private set; }
+        public MailHelper Mail { get; private set; }
         public RegistrationHelper Registration { get; set; }
 
         ~ApplicationManager()

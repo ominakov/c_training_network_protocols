@@ -8,7 +8,10 @@
         <e p="ApplicationManager.cs" t="Include" />
         <e p="FtpHelper.cs" t="Include" />
         <e p="HelperBase.cs" t="Include" />
+        <e p="JamesHelper.cs" t="Include" />
+        <e p="MailHelper.cs" t="Include" />
         <e p="RegistrationHelper.cs" t="Include" />
+        <e p="TelnetInterface.cs" t="Include" />
       </e>
       <e p="bin" t="ExcludeRecursive" />
       <e p="config_inc.php" t="Include" />
@@ -46,6 +49,7 @@
         <e p="AccountCreationTests.cs" t="Include" />
         <e p="TestBase.cs" t="Include" />
       </e>
+      <e p="Элементы решения" t="Include" />
     </e>
   </component>
 </project>
