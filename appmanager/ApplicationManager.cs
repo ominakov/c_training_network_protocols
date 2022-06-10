@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Text;
 using System.Threading;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Firefox;
@@ -8,7 +7,7 @@ namespace mantis_tests
 {
     public class ApplicationManager
     {
-        protected IWebDriver driver;
+        protected readonly IWebDriver driver;
         protected string baseURL;
 
         private static ThreadLocal<ApplicationManager> app = new ThreadLocal<ApplicationManager>();
@@ -21,12 +20,23 @@ namespace mantis_tests
             Ftp = new FtpHelper(this);
             James = new JamesHelper(this);
             Mail = new MailHelper(this);
+            Auth = new LoginHelper(this);
+            Project = new ProjectManagementHelper(this);
+            ManagementMenu = new ManagementMenuHelper(this);
+            NavigationMenu = new MainMenuHelper(this);
+            Navigator = new NavigationHelper(this, baseURL);
         }
 
+        
         public FtpHelper Ftp { get; set; }
-        public JamesHelper James { get; private set; }
-        public MailHelper Mail { get; private set; }
+        public JamesHelper James { get; set; }
+        public MailHelper Mail { get; set; }
         public RegistrationHelper Registration { get; set; }
+        public LoginHelper Auth { get; set;  }
+        public ProjectManagementHelper Project { get; set; }
+        public ManagementMenuHelper ManagementMenu { get; set; }
+        public MainMenuHelper NavigationMenu { get; set; }
+        public NavigationHelper Navigator { get; set; }
 
         ~ApplicationManager()
         {
@@ -44,7 +54,7 @@ namespace mantis_tests
             if (!app.IsValueCreated)
             {
                 ApplicationManager newInstance =  new ApplicationManager();
-                newInstance.driver.Url = "http://HomeServer:8080/mantisbt-2.25.4/login_page.php";
+                newInstance.Navigator.GoToHomePage();
                 app.Value = newInstance;
             }
             return app.Value; 

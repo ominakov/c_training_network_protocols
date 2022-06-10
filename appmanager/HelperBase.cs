@@ -7,11 +7,12 @@ namespace mantis_tests
         protected ApplicationManager manager;
         protected IWebDriver driver;
 
-        public HelperBase(ApplicationManager manager)
+        protected HelperBase(ApplicationManager manager)
         {
             this.manager = manager;
             this.driver = manager.Driver;
         }
+
         public bool IsElementPresent(By by)
         {
             try
@@ -41,7 +42,8 @@ namespace mantis_tests
         {
              driver.SwitchTo().Alert().Accept();
         }
-        public void Type(By locator, string text)
+
+        protected void Type(By locator, string text)
         {
             if (text != null)
             {

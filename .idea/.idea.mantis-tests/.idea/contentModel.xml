@@ -9,7 +9,11 @@
         <e p="FtpHelper.cs" t="Include" />
         <e p="HelperBase.cs" t="Include" />
         <e p="JamesHelper.cs" t="Include" />
+        <e p="LoginHelper.cs" t="Include" />
         <e p="MailHelper.cs" t="Include" />
+        <e p="MainMenuHelper.cs" t="Include" />
+        <e p="ManagementMenuHelper.cs" t="Include" />
+        <e p="ProjectManagementHelper.cs" t="Include" />
         <e p="RegistrationHelper.cs" t="Include" />
         <e p="TelnetInterface.cs" t="Include" />
       </e>
@@ -19,6 +23,7 @@
       <e p="mantis-tests.sln" t="IncludeFlat" />
       <e p="model" t="Include">
         <e p="AccountData.cs" t="Include" />
+        <e p="ProjectData.cs" t="Include" />
       </e>
       <e p="obj" t="ExcludeRecursive" />
       <e p="packages" t="ExcludeRecursive">
@@ -47,6 +52,8 @@
       </e>
       <e p="tests" t="Include">
         <e p="AccountCreationTests.cs" t="Include" />
+        <e p="ProjectCreationTests.cs" t="Include" />
+        <e p="ProjectRemovalTests.cs" t="Include" />
         <e p="TestBase.cs" t="Include" />
       </e>
       <e p="Элементы решения" t="Include" />

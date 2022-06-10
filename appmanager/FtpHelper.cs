@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Diagnostics;
 using System.IO;
 using System.Net;
 using System.Net.FtpClient;
@@ -14,7 +13,7 @@ namespace mantis_tests
         {
             client = new FtpClient();
             client.Host = "localhost";
-            client.Credentials = new System.Net.NetworkCredential("mantis", "mantis");
+            client.Credentials = new NetworkCredential("mantis", "mantis");
             client.Connect();
         }
 

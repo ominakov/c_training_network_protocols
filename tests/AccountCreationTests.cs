@@ -6,7 +6,7 @@ namespace mantis_tests
     [TestFixture]
     public class AccountCreationTests : TestBase
     {
-        [OneTimeSetUp]
+        [TestFixtureSetUp]
         public void SetUpConfig()
         {
             app.Ftp.BackupFile("/config/config_inc.php");
@@ -20,16 +20,14 @@ namespace mantis_tests
         {
             AccountData account = new AccountData()
             {
-                Name = "testuser25",
+                Name = "testuser31",
                 Password = "password",
-                Email = "testuser25@localhost.localdomain"
+                Email = "testuser31@localhost.localdomain"
             };
-            app.James.Delete(account);
-            app.James.Add(account);
-            app.Registration.Register(account);
+            app.Auth.Create(account);
         }
 
-        [OneTimeTearDown]
+        [TestFixtureTearDown]
         public void RestoreConfig()
         {
             app.Ftp.RestoreBackupFile("/config/config_inc.php");
