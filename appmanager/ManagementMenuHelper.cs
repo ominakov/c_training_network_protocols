@@ -29,6 +29,9 @@ namespace mantis_tests
                 case "permissions":
                     driver.FindElement(By.XPath("//a[contains(@href, '/adm_permissions_report.php')]")).Click();
                     break;
+                case "users":
+                    driver.FindElement(By.XPath("//a[contains(@href, '/manage_user_edit_page.php')]")).Click();
+                    break;
             }
         }
     }

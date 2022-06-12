@@ -4,7 +4,10 @@
     <e p="C:\Users\minak\AppData\Local\JetBrains\Rider2020.2\extResources" t="IncludeRecursive" />
     <e p="C:\Users\minak\AppData\Local\JetBrains\Rider2020.2\resharper-host\Local\Transient\Rider\v202\SolutionCaches\_mantis-tests.-78683243.00" t="ExcludeRecursive" />
     <e p="D:\repos\mantis-tests" t="IncludeRecursive">
+      <e p="app.config" t="Include" />
       <e p="appmanager" t="Include">
+        <e p="AdminHelper.cs" t="Include" />
+        <e p="APIHelper.cs" t="Include" />
         <e p="ApplicationManager.cs" t="Include" />
         <e p="FtpHelper.cs" t="Include" />
         <e p="HelperBase.cs" t="Include" />
@@ -13,32 +16,40 @@
         <e p="MailHelper.cs" t="Include" />
         <e p="MainMenuHelper.cs" t="Include" />
         <e p="ManagementMenuHelper.cs" t="Include" />
+        <e p="NavigationHelper.cs" t="Include" />
         <e p="ProjectManagementHelper.cs" t="Include" />
         <e p="RegistrationHelper.cs" t="Include" />
         <e p="TelnetInterface.cs" t="Include" />
       </e>
       <e p="bin" t="ExcludeRecursive" />
       <e p="config_inc.php" t="Include" />
+      <e p="Connected Services\Mantis\configuration.svcinfo" t="Include" />
+      <e p="Connected Services\Mantis\configuration91.svcinfo" t="Include" />
+      <e p="Connected Services\Mantis\mantis_tests.Mantis.AccountData.datasource" t="Include" />
+      <e p="Connected Services\Mantis\mantis_tests.Mantis.CustomFieldDefinitionData.datasource" t="Include" />
+      <e p="Connected Services\Mantis\mantis_tests.Mantis.FilterData.datasource" t="Include" />
+      <e p="Connected Services\Mantis\mantis_tests.Mantis.HistoryData.datasource" t="Include" />
+      <e p="Connected Services\Mantis\mantis_tests.Mantis.IssueData.datasource" t="Include" />
+      <e p="Connected Services\Mantis\mantis_tests.Mantis.IssueHeaderData.datasource" t="Include" />
+      <e p="Connected Services\Mantis\mantis_tests.Mantis.ObjectRef.datasource" t="Include" />
+      <e p="Connected Services\Mantis\mantis_tests.Mantis.ProfileDataSearchResult.datasource" t="Include" />
+      <e p="Connected Services\Mantis\mantis_tests.Mantis.ProjectAttachmentData.datasource" t="Include" />
+      <e p="Connected Services\Mantis\mantis_tests.Mantis.ProjectData.datasource" t="Include" />
+      <e p="Connected Services\Mantis\mantis_tests.Mantis.ProjectVersionData.datasource" t="Include" />
+      <e p="Connected Services\Mantis\mantis_tests.Mantis.TagDataSearchResult.datasource" t="Include" />
+      <e p="Connected Services\Mantis\mantis_tests.Mantis.UserData.datasource" t="Include" />
+      <e p="Connected Services\Mantis\mantisconnect.wsdl" t="Include" />
+      <e p="Connected Services\Mantis\Reference.cs" t="Include" />
+      <e p="Connected Services\Mantis\Reference.svcmap" t="Include" />
       <e p="mantis-tests.csproj" t="IncludeRecursive" />
       <e p="mantis-tests.sln" t="IncludeFlat" />
       <e p="model" t="Include">
         <e p="AccountData.cs" t="Include" />
+        <e p="IssueData.cs" t="Include" />
         <e p="ProjectData.cs" t="Include" />
       </e>
       <e p="obj" t="ExcludeRecursive" />
       <e p="packages" t="ExcludeRecursive">
-        <e p="MSTest.TestAdapter.2.2.7\build\_common\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll" t="Include" />
-        <e p="MSTest.TestAdapter.2.2.7\build\_common\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll" t="Include" />
-        <e p="MSTest.TestAdapter.2.2.7\build\_common\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll" t="Include" />
-        <e p="MSTest.TestAdapter.2.2.7\build\_common\ru" t="Include">
-          <e p="Microsoft.TestPlatform.AdapterUtilities.resources.dll" t="Include" />
-          <e p="Microsoft.TestPlatform.CoreUtilities.resources.dll" t="Include" />
-          <e p="Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.resources.dll" t="Include" />
-          <e p="Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.resources.dll" t="Include" />
-          <e p="Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll" t="Include" />
-          <e p="Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll" t="Include" />
-        </e>
-        <e p="MSTest.TestAdapter.2.2.7\build\net45\Microsoft.TestPlatform.AdapterUtilities.dll" t="Include" />
         <e p="NUnit3TestAdapter.4.2.1\build\net35\nunit.engine.api.dll" t="Include" />
         <e p="NUnit3TestAdapter.4.2.1\build\net35\nunit.engine.core.dll" t="Include" />
         <e p="NUnit3TestAdapter.4.2.1\build\net35\nunit.engine.dll" t="Include" />
@@ -52,6 +63,7 @@
       </e>
       <e p="tests" t="Include">
         <e p="AccountCreationTests.cs" t="Include" />
+        <e p="AddNewIssue.cs" t="Include" />
         <e p="ProjectCreationTests.cs" t="Include" />
         <e p="ProjectRemovalTests.cs" t="Include" />
         <e p="TestBase.cs" t="Include" />

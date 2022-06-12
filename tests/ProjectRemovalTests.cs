@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 using NUnit.Framework;
 
 namespace mantis_tests
@@ -16,7 +12,7 @@ namespace mantis_tests
             app.Auth.Login("administrator", "root");
             if (!app.Project.IsAnyProjectPresent())
             {
-                ProjectData project = new ProjectData("NewProject");
+                ProjectData project = new ProjectData(GenerateRandomLatinString(5));
                 app.Project.Create(project);
             }
             List<ProjectData> oldList = app.Project.GetProjectList();
@@ -27,6 +23,28 @@ namespace mantis_tests
             newList.Sort();
             Assert.AreEqual(oldList, newList);
             app.Auth.Logout();
+        }
+       
+        [Test]
+        public void ProjectRemovalTestUsingAPI()
+        {
+            AccountData account = new AccountData()
+            {
+                Name = "administrator",
+                Password = "root"
+            };
+            if (!app.API.IsAnyProjectPresent(account))
+            {
+                ProjectData project = new ProjectData(GenerateRandomLatinString(5));
+                app.API.Create(account, project);
+            }
+            List<ProjectData> oldList = app.API.GetProjectList(account);
+            app.API.Remove(account, 0);
+            oldList.RemoveAt(0);
+            List<ProjectData> newList = app.API.GetProjectList(account);
+            oldList.Sort();
+            newList.Sort();
+            Assert.AreEqual(oldList, newList);
         }
     }
 }

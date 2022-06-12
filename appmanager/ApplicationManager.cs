@@ -25,9 +25,12 @@ namespace mantis_tests
             ManagementMenu = new ManagementMenuHelper(this);
             NavigationMenu = new MainMenuHelper(this);
             Navigator = new NavigationHelper(this, baseURL);
+            Admin = new AdminHelper(this, baseURL);
+            API = new APIHelper(this);
         }
 
-        
+        public AdminHelper Admin { get; set; }
+        public APIHelper API { get; set; }
         public FtpHelper Ftp { get; set; }
         public JamesHelper James { get; set; }
         public MailHelper Mail { get; set; }

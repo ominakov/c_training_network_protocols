@@ -26,19 +26,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="568c8bbd-6b40-44b6-a25a-78fa9ffd142b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/appmanager/LoginHelper.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/ProjectCreationTests.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/appmanager/APIHelper.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/appmanager/AdminHelper.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/IssueData.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/AddNewIssue.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.mantis-tests/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.mantis-tests/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.mantis-tests/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.mantis-tests/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Properties/AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Properties/AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/appmanager/ApplicationManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/appmanager/ApplicationManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/appmanager/FtpHelper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/appmanager/FtpHelper.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/appmanager/HelperBase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/appmanager/HelperBase.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/appmanager/JamesHelper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/appmanager/JamesHelper.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/appmanager/MailHelper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/appmanager/MailHelper.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/appmanager/TelnetInterface.cs" beforeDir="false" afterPath="$PROJECT_DIR$/appmanager/TelnetInterface.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/appmanager/ManagementMenuHelper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/appmanager/ManagementMenuHelper.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/appmanager/NavigationHelper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/appmanager/NavigationHelper.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mantis-tests.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/mantis-tests.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/AccountData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/model/AccountData.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/ProjectData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/model/ProjectData.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages.config" beforeDir="false" afterPath="$PROJECT_DIR$/packages.config" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/AccountCreationTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/tests/AccountCreationTests.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/ProjectCreationTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/tests/ProjectCreationTests.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/ProjectRemovalTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/tests/ProjectRemovalTests.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/TestBase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/tests/TestBase.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,36 +53,50 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/C804C596-EC8E-46F3-9606-2449E02BACDD/182/Reflect.cs" root0="SKIP_HIGHLIGHTING" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/config_inc.php" />
         <option value="$PROJECT_DIR$/appmanager/LoginHelper.cs" />
         <option value="$PROJECT_DIR$/tests/AccountCreationTests.cs" />
-        <option value="$PROJECT_DIR$/appmanager/NavigationHelper.cs" />
         <option value="$PROJECT_DIR$/appmanager/ManagementMenuHelper.cs" />
         <option value="$PROJECT_DIR$/appmanager/FtpHelper.cs" />
         <option value="$PROJECT_DIR$/Properties/AssemblyInfo.cs" />
         <option value="$PROJECT_DIR$/appmanager/JamesHelper.cs" />
         <option value="$PROJECT_DIR$/appmanager/MailHelper.cs" />
-        <option value="$PROJECT_DIR$/appmanager/HelperBase.cs" />
-        <option value="$PROJECT_DIR$/appmanager/ApplicationManager.cs" />
         <option value="$PROJECT_DIR$/appmanager/MainMenuHelper.cs" />
-        <option value="$PROJECT_DIR$/model/ProjectData.cs" />
-        <option value="$PROJECT_DIR$/tests/ProjectCreationTests.cs" />
         <option value="$PROJECT_DIR$/appmanager/ProjectManagementHelper.cs" />
+        <option value="$PROJECT_DIR$/appmanager/NavigationHelper.cs" />
+        <option value="$PROJECT_DIR$/model/ProjectData.cs" />
+        <option value="$PROJECT_DIR$/appmanager/HelperBase.cs" />
+        <option value="$PROJECT_DIR$/appmanager/AdminHelper.cs" />
+        <option value="$PROJECT_DIR$/tests/TestBase.cs" />
+        <option value="$PROJECT_DIR$/appmanager/ApplicationManager.cs" />
+        <option value="$PROJECT_DIR$/tests/AddNewIssue.cs" />
+        <option value="$PROJECT_DIR$/model/IssueData.cs" />
+        <option value="$PROJECT_DIR$/tests/ProjectCreationTests.cs" />
+        <option value="$PROJECT_DIR$/appmanager/APIHelper.cs" />
         <option value="$PROJECT_DIR$/tests/ProjectRemovalTests.cs" />
       </list>
     </option>
   </component>
   <component name="ProjectId" id="2A8bRT6M6Ox6unwUCL4XjYCowl2" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DebuggerViewTab_PTCS_FirstProportionKey" value="0.39282736" />
+    <property name="DebuggerViewTab_PTCS_LastProportionKey" value="0.26105088" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="XThreadsFramesViewSplitterKey" value="0.38723403" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -112,6 +131,23 @@
       <workItem from="1654846860526" duration="1165000" />
       <workItem from="1654858362530" duration="209000" />
       <workItem from="1654868723450" duration="2693000" />
+      <workItem from="1654885937947" duration="344000" />
+      <workItem from="1654886349909" duration="483000" />
+      <workItem from="1654886970655" duration="7603000" />
+      <workItem from="1654953898283" duration="1223000" />
+      <workItem from="1654971609455" duration="1795000" />
+      <workItem from="1654981097131" duration="543000" />
+      <workItem from="1654986524081" duration="216000" />
+      <workItem from="1654987354561" duration="165000" />
+      <workItem from="1655000621674" duration="914000" />
+      <workItem from="1655002051205" duration="1129000" />
+      <workItem from="1655034152945" duration="2677000" />
+      <workItem from="1655049351071" duration="303000" />
+      <workItem from="1655049779237" duration="511000" />
+      <workItem from="1655050367115" duration="163000" />
+      <workItem from="1655050698219" duration="31000" />
+      <workItem from="1655050787697" duration="2867000" />
+      <workItem from="1655072206186" duration="786000" />
     </task>
     <servers />
   </component>
@@ -166,10 +202,11 @@
       <screen x="0" y="0" width="1960" height="1254" />
     </state>
     <state x="149" y="104" width="1444" height="1049" key="DiffContextDialog/0.0.1960.1254@0.0.1960.1254" timestamp="1654767847229" />
-    <state x="501" y="368" key="SettingsEditor" timestamp="1654869123279">
-      <screen x="0" y="0" width="1972" height="1254" />
+    <state x="498" y="368" key="SettingsEditor" timestamp="1655050710120">
+      <screen x="0" y="0" width="1962" height="1254" />
     </state>
     <state x="498" y="368" key="SettingsEditor/0.0.1960.1254@0.0.1960.1254" timestamp="1654758887566" />
+    <state x="498" y="368" key="SettingsEditor/0.0.1962.1254@0.0.1962.1254" timestamp="1655050710120" />
     <state x="501" y="368" key="SettingsEditor/0.0.1972.1254@0.0.1972.1254" timestamp="1654869123279" />
     <state x="573" y="358" key="Vcs.Push.Dialog.v2" timestamp="1654394295658">
       <screen x="0" y="0" width="1960" height="1254" />
@@ -179,5 +216,24 @@
       <screen x="0" y="0" width="1960" height="1254" />
     </state>
     <state x="534" y="285" width="672" height="678" key="search.everywhere.popup/0.0.1960.1254@0.0.1960.1254" timestamp="1654801341078" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/tests/ProjectRemovalTests.cs</url>
+          <line>35</line>
+          <properties documentPath="D:\repos\mantis-tests\tests\ProjectRemovalTests.cs" initialLine="35">
+            <startOffsets>
+              <option value="1084" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1126" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

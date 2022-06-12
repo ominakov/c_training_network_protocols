@@ -1,4 +1,5 @@
-﻿using System.IO;
+﻿using System.Collections.Generic;
+using System.IO;
 using NUnit.Framework;
 
 namespace mantis_tests
@@ -6,7 +7,7 @@ namespace mantis_tests
     [TestFixture]
     public class AccountCreationTests : TestBase
     {
-        [TestFixtureSetUp]
+        [OneTimeSetUp]
         public void SetUpConfig()
         {
             app.Ftp.BackupFile("/config/config_inc.php");
@@ -20,14 +21,20 @@ namespace mantis_tests
         {
             AccountData account = new AccountData()
             {
-                Name = "testuser31",
+                Name = "testuser50",
                 Password = "password",
-                Email = "testuser31@localhost.localdomain"
+                Email = "testuser50@localhost.localdomain"
             };
+            List<AccountData> accounts = app.Admin.GetAllAccounts();
+            AccountData existingAccount = accounts.Find(x => x.Name == account.Name);
+            if (existingAccount != null)
+            {
+                app.Admin.DeleteAccount(existingAccount);
+            }
             app.Auth.Create(account);
         }
 
-        [TestFixtureTearDown]
+        [OneTimeTearDown]
         public void RestoreConfig()
         {
             app.Ftp.RestoreBackupFile("/config/config_inc.php");
