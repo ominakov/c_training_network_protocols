@@ -9,11 +9,13 @@ namespace mantis_tests
         public void CreateNewIssue(AccountData account, ProjectData project, IssueData issueData)
         {
             Mantis.MantisConnectPortTypeClient client = new Mantis.MantisConnectPortTypeClient();
-            Mantis.IssueData issue = new Mantis.IssueData();
-            issue.summary = issueData.Summary;
-            issue.description = issueData.Description;
-            issue.category = issueData.Category;
-            issue.project = new Mantis.ObjectRef();
+            Mantis.IssueData issue = new Mantis.IssueData
+            {
+                summary = issueData.Summary,
+                description = issueData.Description,
+                category = issueData.Category,
+                project = new Mantis.ObjectRef()
+            };
             issue.project.id = project.Id;
             client.mc_issue_add(account.Name, account.Password, issue);
         }
@@ -38,10 +40,13 @@ namespace mantis_tests
         public void Create(AccountData account, ProjectData project)
         {
             Mantis.MantisConnectPortTypeClient client = new Mantis.MantisConnectPortTypeClient();
-            Mantis.ProjectData newProject= new Mantis.ProjectData();
-            newProject.name = project.Name;
+            Mantis.ProjectData newProject = new Mantis.ProjectData
+            {
+                name = project.Name
+            };
             client.mc_project_add(account.Name, account.Password, newProject);
         }
+
         public void Remove(AccountData account, int index)
         {
             Mantis.MantisConnectPortTypeClient client = new Mantis.MantisConnectPortTypeClient();
