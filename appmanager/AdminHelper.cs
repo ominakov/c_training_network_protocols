@@ -44,6 +44,17 @@ namespace mantis_tests
             driver.FindElement(By.CssSelector(".btn-white")).Click();
         }
 
+        public bool IsAccountExists(AccountData account)
+        {
+            List<AccountData> accounts = GetAllAccounts();
+            AccountData existingAccount = accounts.Find(x => x.Name == account.Name);
+            if (existingAccount != null)
+            {
+                return true;
+            }
+            return false;
+        }
+
         private IWebDriver OpenAppAndLogin()
         {
             IWebDriver driver = new SimpleBrowserDriver();
